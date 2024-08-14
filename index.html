@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Counter</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<header>
+    <h1 class="text-5xl front-medium text-blue-500 text-center mt-4 mb-4 font-bold">Progress Bar</h1>
+</header>
+
+
+<body class="mt-12 bg-slate-200">
+    <div class="container mx-auto p-4 ">
+        <div class="flex justify-center items-center">
+            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-3xl" onclick="decrement()">-</button>
+            <div class="text-3xl font-bold mx-4" id="number">0</div>
+            <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-2xl" onclick="increment()">+</button>
+        </div>
+        <div class="progress w-full mt-4">
+            <div id="progress-bar" class="progress-bar bg-blue-500 h-2" role="progressbar" style="width: 0%"></div>
+        </div>
+        <div class="flex justify-center mt-4 space-x-5">
+            <button class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-4" onclick="undo()">Undo</button>
+            <button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mt-4 " onclick="redo()">Redo</button>
+        </div>
+    </div>
+
+   <script src="app.js"></script>
+</body>
+</html>
